@@ -12,7 +12,7 @@ app.set('view engine', 'jade');
 //start/server
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.render('index')
 })
 
 app.listen(port, () => {
