@@ -31,7 +31,6 @@ const downloadblock = function(name, size, index) {
 }
 
 app.get('/', (req, res) => {
-  console.log(req.connection);
   res.render('index')
 
 
@@ -53,7 +52,6 @@ app.post('/getFiles', (req, res) => {
 })
 
 app.get('/download/*', urlencodedParser, function (req, res){
-
   let fileName = req.params[0]
   console.log(fileName);
   res.download(filesForDownloadDir + '/' + fileName)

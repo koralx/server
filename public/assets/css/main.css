@@ -107,3 +107,20 @@ body {
     monospace;
     font-size: 13px;
 }
+@media (max-width: 400px) {
+    .avatar-block {
+        bottom: -50%;
+        left: 25%;
+        align-items: center;
+    }
+    .main {
+        right: 0;
+        width: 95vw;
+        position: relative;
+        align-self: center;
+    }
+    .main_col-3 {
+        justify-content: center;
+        grid-template-columns: 99%;
+    }
+}
