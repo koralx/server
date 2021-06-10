@@ -7,12 +7,10 @@ head
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     |     
     title Miron Ystansev
-    |     
-    link(rel='stylesheet', href='assets/css/main.css')
-    |     
+    |         
     link(rel='stylesheet', href='assets/css/default.css')
-    |     
     link(rel='stylesheet', href='assets/awesome-icons/css/all.css')
+    link(rel='stylesheet', href='assets/css/main.css')
     |     
     meta(name='description', content='Just a site made for an amateur performing the functions of communication with the creator and file hosting')
     |     
@@ -20,6 +18,12 @@ head
     |     
     meta(name='keywords', content='koralx, Miron Ystansev, web, Miron, Ystansev, developer')
   body
+    div.loading.hide
+      div.loading_cubes
+        div.loading_cube
+        div.loading_cube
+        div.loading_cube
+        div.loading_cube
     header.header
       .avatar-block
         img.avatar(src='/assets/image/avatars/avatar.jpg', alt='')
@@ -30,7 +34,7 @@ head
         |             
         small.location
           i.fas.fa-map-marker-alt
-          | Russia
+          |  Russia
     |     
     main.main
       h2.main_title About me
@@ -42,13 +46,20 @@ head
           li &#x1F331; I&rsquo;m currently learning node.js, JavaScript and others
           |                 
           li
-            | &#x1F4EB; How to reach me miron.miron.y@mail.ru, koralx#2139, https://vk.com/kstatiyamiron
+            &#x1F4EB; How to reach me miron.miron.y@mail.ru, koralx#2139, 
+            a(href="https://vk.com/koralxs" target="_blank") https://vk.com/koralxs
       |         
       h2.main_title Download files 
-      |         
-      article.main_col-3 
-    script(type='text/javascript', src='/assets/js/main.js').          
+      |  
+      section.main_section
+        article.main_grid-3
+        div.section_hide-button(onclick="showAllElements(this)")
+          i.fas.fa-chevron-down
+    script(type='text/javascript', src='/assets/js/loadingAnimation.js').
+    script(type='text/javascript', src='/assets/js/serverRequests.js' defer).
+    script(type='text/javascript', src='/assets/js/FileControll.js' defer).
     style.
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
       @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
       @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
       @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700;800;900&family=PT+Mono&display=swap');

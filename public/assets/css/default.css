@@ -278,10 +278,41 @@ table {
 
 body,
 html {
+    background-color: #fdfdfd;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     height: 100%;
     overflow-x: hidden;
-    color: rgb(166, 171, 185);
     font-family: 'Helvatica LTPro';
+}
+
+h2 {
+    font-size: 17px;
+    font-family: 'Roboto';
+    font-weight: 300;
+    color: #5cb0dd;
+}
+
+p {
+    color: #949494;
+}
+
+li {
+    color: #949494;
+}
+
+small {
+    color: #949494;
+}
+
+a {
+    text-decoration: none;
+    color: #53a3b8;
+}
+
+a:hover {
+    color: #249dbb;
 }
 
 @font-face {
