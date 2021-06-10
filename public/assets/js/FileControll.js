@@ -1,10 +1,11 @@
 let status = false
+let grid = document.querySelectorAll('.main_grid-3_block-1-3')
+let showHide = document.querySelector('.fa-chevron-down')
 
 function showAllElements(btn) {
     let grids = document.querySelector('.main_grid-3')
-    let grid = document.querySelectorAll('.main_grid-3_block-1-3')
-
-    let showHide = document.querySelector('.fa-chevron-down')
+    grid = document.querySelectorAll('.main_grid-3_block-1-3')
+    showHide = document.querySelector('.fa-chevron-down')
 
     /*let show = document.querySelector('.fa-chevron-down')
     let hide = document.querySelector('.fa-chevron-up')*/

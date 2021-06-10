@@ -13,7 +13,11 @@ fetch('/files/get', {
         rs = rs + object[key]
     }
     col3.innerHTML = rs
-
+    let allFiles = document.querySelectorAll('.main_grid-3_block-1-3')
+    console.log(allFiles.length);
+    if(allFiles.length < 7) {
+        document.querySelector('.fa-chevron-down').classList.add('hide')
+    }
     /*let downloadBlock = document.querySelectorAll('.main_grid-3_block-1-3')
     downloadBlock.forEach(block => {
         if(block.getAttribute('data-indexFile') > 5) {
