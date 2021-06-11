@@ -319,3 +319,9 @@ a:hover {
     font-family: 'Helvatica LTPro';
     src: url(/assets/fonts/HelveticaNeueLTPro-Lt.otf);
 }
+
+@media (max-width: 400px) {
+    li {
+        font-size: 15px;
+    }
+}
