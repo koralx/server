@@ -311,3 +311,7 @@
 .main_grid-3_expansion {
     max-height: 1550px;
 }
+
+.overflow-h{
+    overflow: hidden;
+}

@@ -1,6 +1,9 @@
 let cubes = document.querySelectorAll('.loading_cube')
 let loadWindow = document.querySelector('.loading')
 let cubeZoomed
+let body = document.body
+
+body.classList.add('overflow-h')
 
 function anim(time) {
     cubes.forEach(cube => {
@@ -23,5 +26,6 @@ anim(250)
 
 setTimeout(() => {
     loadWindow.classList.add('hide')
+    body.classList.remove('overflow-h')
 }, 2500);
 
