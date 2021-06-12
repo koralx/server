@@ -18,7 +18,7 @@ head
     |     
     meta(name='keywords', content='koralx, Miron Ystansev, web, Miron, Ystansev, developer')
   body
-    div.loading
+    //div.loading.hide
       div.loading_cubes
         div.loading_cube
         div.loading_cube
@@ -39,34 +39,47 @@ head
           |  Russia
     |     
     main.main
-      h2.main_title About me
+      h2.main_title Обо мне
       |         
       article.main_block
         ul.main_list
-          li &#x1F44B; Hi, I&rsquo;m @koralx, Miron Ystansev!
+          li &#x1F44B; Привет, я  Мирон Устьянцев, @koralx!
           |                 
-          li &#x1F331; I&rsquo;m currently learning node.js, JavaScript and others
+          li &#x1F331; Верстаю сайты под ключ. Пишу backend на node.js и express.js.
           |                 
-          li &#x1F4EB; How to reach me miron.miron.y@mail.ru, koralx#2139, 
+          li &#x1F4EB; Как связаться со мной: miron.miron.y@mail.ru, koralx#2139, 
             a(href="https://vk.com/koralxs" target="_blank") https://vk.com/koralxs
           li 
-            | 💾 My github 
-            a(href="https://github.com/koralx" target="_blank") https://github.com/koralx,
-            |  there you can find my repositories
-      |           
-      h2.main_title Download files 
-      |  
+            | 💾 У меня есть аккаунт на 
+            a(href="https://github.com/koralx" target="_blank")  github,
+            |  где я иногда выкладываю свои работы
+
+
+
+      article.main_block.main_info-block
+        p.block_info-text Использую следуйщие фреймворки :
+        div.main_grid-3_img
+          div.block_img
+            img(src="assets/image/Expressjs.png", alt="")
+          div.block_img
+            img(src="assets/image/React.png", alt="")
+          div.block_img
+            img(src="assets/image/node.png", alt="")
+
+
+
+      h2.main_title Скачать файлы
       section.main_section
         article.main_grid-3
         div.section_hide-button(onclick="showAllElements(this)")
           i.fas.fa-chevron-down
-      article.main_block-text
-        p.block_text I make sites in node.js, React.js, have experience, I am ready to do work of any complexity and volume for a low price
 
-    script(type='text/javascript', src='/assets/js/loadingAnimation.js').
+    script(type='text/javascript', src='/assets/js/animations.js').
+    //script(type='text/javascript', src='/assets/js/loadingAnimation.js').
     script(type='text/javascript', src='/assets/js/serverRequests.js' defer).
     script(type='text/javascript', src='/assets/js/FileControll.js' defer).
     style.
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap');
       @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
       @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
       @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
