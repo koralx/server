@@ -7,7 +7,7 @@ const urlencodedParser = bodyParser.text()
 
 var app = express();
 
-let port = 80
+let port = 8080
 
 // Routes
 const getFilesRouter = require('./routes/getFileRouter');
